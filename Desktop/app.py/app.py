@@ -7,7 +7,7 @@ from PIL import Image
 import time 
 
 
-API_KEY = ""
+API_KEY = "AIzaSyB-0jeKGujaDmCg10he9BDRreBGZzKhmYc"
 API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent"
 
 st.set_page_config(page_title="Gemini Image Generator & Editor", layout="centered")
@@ -119,3 +119,4 @@ if st.button("Generate/Edit Image"):
             st.write(response.text)
         except Exception as e:
             st.error(f"An unexpected error occurred: {e}")
+
